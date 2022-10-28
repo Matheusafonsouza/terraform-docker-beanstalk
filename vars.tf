@@ -9,3 +9,11 @@ variable "application_name" {
 variable "application_description" {
   type = string
 }
+
+variable "machine" {
+  type = string
+}
+
+variable "maxSize" {
+  type = number
+}
