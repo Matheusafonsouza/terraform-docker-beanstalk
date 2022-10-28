@@ -17,3 +17,7 @@ variable "machine" {
 variable "maxSize" {
   type = number
 }
+
+variable "environment" {
+  type = string
+}
