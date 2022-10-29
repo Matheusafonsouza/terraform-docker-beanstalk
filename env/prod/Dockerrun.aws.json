@@ -1,0 +1,11 @@
+{
+    "Image": {
+        "Name": "384775792797.dkr.ecr.us-east-1.amazonaws.com/docker-beanstalk-production"
+    },
+    "Ports": [
+        {
+            "ContainerPort": "8000",
+            "HostPort": "8000"
+        }
+    ]
+}
