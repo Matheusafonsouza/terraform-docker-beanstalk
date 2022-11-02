@@ -53,4 +53,3 @@ resource "aws_iam_role_policy" "beanstalk_ec2_policy" {
     ]
   })
 }
-
