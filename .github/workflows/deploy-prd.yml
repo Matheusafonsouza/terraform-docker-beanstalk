@@ -45,6 +45,11 @@ jobs:
       run: |
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG ./application
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+
+  beanstalk:
+    needs: build
+    name: Update beanstalk
+    runs-on: ubuntu-latest
     
     - name: Update beanstalk version
       env:
