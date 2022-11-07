@@ -45,6 +45,10 @@ resource "aws_iam_role_policy" "beanstalk_ec2_policy" {
             "ecr:ListImages",
             "ecr:DescribeImages",
             "ecr:BatchGetImage",
+            "ecr:GetLifecyclePolicy",
+            "ecr:GetLifecyclePolicyPreview",
+            "ecr:ListTagsForResource",
+            "ecr:DescribeImageScanFindings",
             "s3:*"
         ]
         Effect   = "Allow"
